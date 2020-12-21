@@ -1,0 +1,109 @@
+
+* {
+	padding: 0;
+	margin: 0;
+}
+:root {
+	--primary-cyan: hsl(179, 62%, 43%);
+	--primary-light-cyan: hsl(179, 70%, 45%);
+	--primary-bright-yellow: hsl(71, 73%, 54%);
+	--neutral-grayish-blue: hsl(218, 22%, 67%);
+	--neutral-light-grey: hsl(204, 43%, 93%);
+}
+body {
+	font-family: "Karla", sans-serif;
+	width: 100%;
+  height: 100vh;
+	font-size: 16px;
+	background-color: hsl(204, 43%, 93%);
+}
+p{
+	line-height: 1.5;
+}
+.grid-container{
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-auto-rows: auto;
+	max-width: 990px;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%, -60%);
+	overflow: hidden;
+}
+
+/* title section */
+h2{
+	color: hsl(179, 62%, 43%);
+	margin-bottom: 25px;
+}
+.title_text{
+	color: hsl(218, 22%, 67%);
+}
+.title_info{
+	color: hsl(71, 73%, 54%);
+	margin-bottom: 15px;
+}
+.title {
+	grid-column: span 12;
+	background-color: #fff;
+	padding: 30px 60px;
+}
+/* subscription section */
+h3{
+	margin-bottom: 15px;
+}
+span{
+	font-size: 36px;
+	font-weight: bold;
+}
+.text{
+	color: #fff;
+}
+.subscription{
+	grid-column: span 6;
+	background-color: hsl(179, 62%, 43%);
+	padding: 30px 60px;
+}
+.btn{
+	width: 100%;
+	font-size: 20px;
+	color: #fff;
+	background-color: hsl(71, 73%, 54%);
+	border: 0;
+	padding: 10px;
+	border-radius: 8px;
+	margin-top: 20px;
+	box-shadow: 0 0 25px -10px rgba(0, 0, 0, 1);
+	cursor: pointer;
+}
+/* info section */
+.info{
+	grid-column: span 6;
+	background: hsl(179, 70%, 45%);
+	padding: 30px 60px;
+	color: #fff;
+}
+
+
+
+
+/* footer */
+footer a{
+	font-size: 16px;
+}
+@media screen and (max-width: 980px) {
+	body{
+		text-align: center;
+	}
+	.title{
+		grid-column: span 12;
+	}
+	.subscription{
+		grid-column: span 12;
+	}
+	.info{
+		grid-column: span 12;
+	}
+}
